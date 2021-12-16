@@ -1,43 +1,129 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                         <!-- Hold Ctrl and press / to create this comment field -->
 <html lang="en">
-    <head>
-        <meta charset+"UTF-8" />
-        <title>Run Buddy</title>
-    </head>
-    <body>      
-<!-- navigation -->         
-<header>
-    <h1>RUN BUDDY</h1>
-</header>
 
-<!-- hero/jumbotron-->
-<section>
-</section>
+<head>
+  <meta charset="UTF-8" />
+  <title>Run Buddy</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-<!-- "what we do" section-->
-<section>
-    <h2>What We do</h2>
-</section>
+<body>
+  <!-- navigation -->
+  <header>
+    <h2>
+      <a href="/">
+        RUN BUDDY
+      </a>
+    </h1>                                              <!-- <h1>, <h2>, etc, defines the size of the heading statement/line-->
+    <nav>                                              <!-- <nav> defines a set of navigation links, ref: (What-we-do, what-you-do, etc.)-->
+      <!-- Unordered list element -->
+      <ul>                                             <!-- <ul> is an unordered list. contains <li> element-->
+        <!-- List item element-->
+        <li>
+          <!-- Anchor element -->
+          <a href="#what-we-do">What We Do</a>         <!-- <a> is an anchor to another website or link within the webpage-->
+        </li>                                          <!-- <li> presents an item in a list format-->
+        <li>
+          <a href="#what-you-do">What You Do</a>       <!-- href attributed to the <a> element,  needed with the <a> element or hyperlink will not work-->
+        </li>
+        <li>
+          <a href="#your-trainers">Your Trainers</a>
+        </li>
+        <li>
+          <a href="#reach-out">Reach Out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- "What You Do" section-->
-<section>
+  <!-- hero/jumbotron -->
+  <section class="hero">                              <!-- <section> defines a setion in the document-->
+    <div class="hero-form">                           <!-- <div> can be used as a division within a section or another section--> 
+        <h3>Get Started Today</h3>                    <!-- class= attribute is used to specify one or more class names of an element, used with CSS to access specific elements--> <!-- .hero-form is affected from all class= commands-->
+        <p>Fill out this form and one of our trainers will schedule a consult</p>                   <!-- <p> represents a paragrpah, blocks of text-->
+      <!-- Add form element-->
+      <form>                                                                                        <!-- <form> element is a container for input elements (text, checkbox, etc.)-->
+        <label for="name">Enter full name:</label>
+        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+        <label for="email">Enter email address:</label>"
+        <input type="email" placeholder="your Email" name="email" id="email" class="form-input">
+        <label for="phone">Enter a telephone number: </label>
+        <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+        <p>
+          Have you worked out with a trainer?
+          <input type="radio" name="trainer-confirm" id="trainer-yes" />
+          <label for="trainer-yes">Yes</label>
+          <input type="radio" name="trainer-confirm" id="trainer-no" />
+          <label for="trainer-no">No</label>
+        </p>
+        <p>
+          <label for="checkbox">
+          I acknowledge that I am at least 18 years of age.
+          </label>
+          <input type="checkbox" name="age-confirm" id="checkbox" />
+        </p>
+        <button type="submit">
+          Get running!
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- "what we do" section -->
+  <section id="what-we-do">                                                                             <!-- id= like class but more specific to one element rather than a group - only have 1 id per page if possible-->
+    <h2>What We Do</h2>
+    <p>
+      butcher selfies chambray shabby chic gentrify readymade yr Echo Park
+    </p>
+  </section>
+
+  <!-- "what you do" section -->4
+  <section id="what-you-do">
     <h2>What You Do</h2>
-</section>
+    <div>
+      <!-- insert this img element-->
+      <img src="./assets/images/step-1.svg" alt="" />                                                   <!-- <img src=-->
+      <h3>Step 1: Fill Out the Form Above</h3>
+      <p>You're already here, so why not?</p>
+    </div>
 
-<!-- "meet the trainers" section-->
-<section>
+    <div>
+      <img src="./assets/images/step-2.svg" alt="" />
+      <h3>Step 2: Consult with One of Our Trianers.</h3>
+      <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>
+
+    <div>
+      <img src="./assets/images/step-3.svg" alt="" />
+      <h3>Step 3: Get Running</h3>
+      <p>Hit the gorund running )literally) once your trainer lays our your plan!</p>
+    </div>
+
+    <div>
+      <img src="./assets/images/step-4.svg" alt="" />
+      <h3>Step 4: See Results</h3>
+      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    </div>
+  </section>
+
+  <!-- "meet the trainers" section -->
+  <section>
     <h2>Meet The Trainers</h2>
-</section>
+  </section>
 
-<!-- "reach out" section-->
-<section>
+  <!-- "reach out" section -->
+  <section>
     <h2>Reach Out</h2>
-</section>
-<!-- footer-->
-<footer>
+  </section>
+
+  <!-- footer -->
+  <footer>
     <h2>❤️ Made with love by Run Buddy.</h2>
-</footer>
-    </body>
-        What Wo Do What You Do Your Trainers Reach Out
-    </body>
+    <div>
+      <a href="#">Read Our Privacy Policy</a><br />
+      &copy; 2019 Run Buddy, Inc.
+    </div>
+  </footer>
+</body>
+
 </html>
