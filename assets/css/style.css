@@ -12,11 +12,38 @@ body {
 
 /* apply styles to <header> */
 header {
+  background-attachment: fixed;
+  background-position: 80%;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+header h1 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-cta h2 {
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* padding, border, margin, in that order from the inside out */
@@ -89,6 +116,8 @@ section {
 
 /* Hero Style Start */
 .hero {
+  background-attachment: fixed;
+  background-position: 80%;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -118,6 +147,7 @@ section {
 }
 
 .hero-form button {
+  border-radius: 10px;
   color: #fce138;
   background-color: #024e76; 
   border: none;
@@ -125,9 +155,16 @@ section {
   font-size: 16px;
 }
 
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
 .hero-form {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   color: #024e76;
   background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8)
   padding: 20px;
   border: solid 3px #024e76;
   width: 40%;
@@ -145,6 +182,7 @@ section {
 /* Hero Style End */
 
 .form-input {
+  border-radius: 10px;
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -152,7 +190,12 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  background-color: rgba(255,255,255, 0.75);
+}
 
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -194,11 +237,19 @@ background: #fce138;
   margin: 5opx auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -327,6 +378,7 @@ color: white;
 }
 
 .contact-form input, .contact-info textarea {
+  border-radius: 10px;
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -337,7 +389,14 @@ color: white;
   margin-top: 5px;
 }
 
+.contact-form button:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
 .contact-form button {
+  background-color: rgba(255,255,255, 0.75);
+  border-radius: 10px;
   width: 100%;
   border: none;
   background: #fce138;
@@ -345,6 +404,11 @@ color: white;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
 .contact-info a {
@@ -360,6 +424,7 @@ color: white;
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
